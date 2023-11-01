@@ -1,0 +1,42 @@
+@import "@/styles/abstracts/variables";
+
+.container {
+  padding: 16px 18px;
+  background-color: $color-primary;
+  
+  // background-color: rebeccapurple !important;
+}
+
+.image {
+  width: 258px;
+  //   height: 268px;
+}
+.name {
+  font-family: $font-paragraphs;
+  font-size: $h5_large;
+  font-weight: $font-weight-fw3;
+  line-height: $h5_large * 1.5;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 28px;
+}
+.designation {
+  font-family: $font-heading;
+  font-size: $p_large;
+  font-weight: $font-weight-fw1;
+  line-height: $p_large * 1.5;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@media screen and (max-width: 577px) {
+  .name {
+    margin-top: 20px;
+    font-size: $p_small;
+  }
+
+  .designation {
+    margin-top: 0px;
+    font-size: $p_small;
+  }
+}

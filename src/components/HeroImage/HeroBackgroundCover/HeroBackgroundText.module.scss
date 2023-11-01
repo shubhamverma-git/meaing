@@ -1,0 +1,53 @@
+@import "../../../styles/abstracts/variables";
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 400px !important;
+  margin-top: 70px;
+  .image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .hero_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    font-family: $font-heading;
+    font-size: $h1_large;
+    font-weight: $font-weight-fw1;
+    background-color: rgba(56, 56, 56, 0.95);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    .hero_title {
+      font-size: $h1_large;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    .hero_title {
+      font-size: $h1_homepage_title_large;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: 300px;
+    .hero_title {
+      font-size: $h1_small;
+      align-items: center;
+      padding: 28px;
+    }
+  }
+}

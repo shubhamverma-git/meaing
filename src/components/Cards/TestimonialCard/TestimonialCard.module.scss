@@ -1,0 +1,39 @@
+@import "../../../styles/abstracts/variables";
+
+.container {
+  padding: 22px 16px;
+  background-color: #d9d9d9;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 100%;
+}
+.card_title {
+  font-size: $h4_large;
+  line-height: $h4_large * 1.25;
+  font-family: $font-heading;
+  font-weight: $font-weight-fw2;
+}
+.card_content {
+  font-size: $p_large;
+  font-family: $font-paragraphs;
+  line-height: $p_large * 1.5;
+  font-weight: $font-weight-fw4;
+  margin-bottom: 0;
+}
+.sub_title {
+  font-size: $p_small;
+  line-height: $p_small * 1.5;
+  font-family: $font-paragraphs;
+  font-weight: $font-weight-fw2;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .card_title {
+    font-size: $p_small;
+  }
+
+  .card_content {
+    font-size: $p_small;
+  }
+}

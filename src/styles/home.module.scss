@@ -1,0 +1,17 @@
+.blog_wrapper {
+  margin-top: 80px;
+}
+
+.section_spacing {
+  margin-top: 60px !important;
+}
+
+.project_section_description {
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 576px) {
+  .blog_wrapper {
+    margin-top: 16px;
+  }
+}

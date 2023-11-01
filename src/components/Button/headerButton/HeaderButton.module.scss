@@ -1,0 +1,85 @@
+@import "../../../styles/abstracts/variables";
+
+.customButton {
+  position: relative;
+  border: none;
+  cursor: pointer;
+  width: 190px;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+
+  .buttonBackground {
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    width: 150px;
+    overflow: hidden;
+    transition: width 0.3s ease;
+  }
+
+  .buttonText {
+    font-size: $p_large;
+    font-family: $font-heading;
+    line-height: $p_large * 1.5;
+    font-weight: $font-weight-fw2;
+    white-space: nowrap;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+
+    transform: translate(0, -50%);
+    color: rgb(255, 255, 255);
+  }
+
+  &:hover .buttonBackground {
+    width: 190px;
+    overflow: visible;
+
+    &:hover .rightIcon {
+      color: rgb(255, 255, 255);
+    }
+
+    &:hover .designRightIcon {
+      color: rgb(0, 0, 0);
+    }
+  }
+
+  .rightIcon {
+    position: absolute;
+    height: 30px;
+    right: 0px;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 20px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .customButton {
+    width: 165px;
+
+    .buttonBackground {
+      height: 40px;
+      width: 135px;
+    }
+
+    .buttonText {
+      font-size: $p_small;
+      line-height: $p_small * 1.5;
+      font-family: $font-heading;
+      left: 10px;
+    }
+
+    &:hover .buttonBackground {
+      width: 165px;
+    }
+
+    .rightIcon {
+      width: 18px;
+      right: 0;
+    }
+  }
+}

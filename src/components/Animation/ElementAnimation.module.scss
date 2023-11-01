@@ -1,0 +1,45 @@
+.imageContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: flex-start;
+  .outline {
+    position: absolute;
+    z-index: 1;
+    width: 60px;
+  }
+  .filled {
+    animation: entry 2s forwards;
+    width: 60px;
+  }
+}
+
+@keyframes entry {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  @keyframes entry {
+    0% {
+      transform: translateX(0);
+      opacity: 0;
+    }
+    30% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(15px);
+    }
+  }
+}

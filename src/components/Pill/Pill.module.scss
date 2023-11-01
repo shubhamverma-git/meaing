@@ -1,0 +1,17 @@
+@import "@/styles/abstracts/variables";
+
+.container {
+  border-radius: 50px;
+  padding: 2px 12px;
+  min-width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc905;
+  width: fit-content;
+  font-size: $p_small;
+  font-weight: 600;
+  white-space: nowrap;
+  text-transform: capitalize;
+  cursor: pointer;
+}

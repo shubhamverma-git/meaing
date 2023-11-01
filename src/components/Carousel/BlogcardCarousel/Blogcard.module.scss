@@ -1,0 +1,17 @@
+/* @import '../../styles/abstracts/variables'; */
+
+.mySwiper {
+  padding-bottom: 50px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .mySwiper {
+    padding: 0;
+  }
+}
+
+// @media screen and (max-width: 577px) {
+//   .mySwiper {
+//     padding-bottom: 32px !important;
+//   }
+// }

@@ -1,0 +1,18 @@
+@import "@/styles/abstracts/variables";
+.intro_section_container {
+  .client_list {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+    grid-gap: 16px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro_section_container {
+    .client_list {
+      margin-top: 16px;
+    }
+  }
+}

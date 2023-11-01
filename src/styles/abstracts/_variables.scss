@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@400;500;600;700&display=swap");
+
+//colors
+$color-primary: #ffffff;
+$color-yellow: #d7ce00;
+$color-blue: #0088c4;
+$color-brown: #99805b;
+$color-green: #207b25;
+$color-black: #000000;
+$color-black-footer: rgba(47, 47, 47, 1);
+$color-gray: #ececec;
+$color-dark-grey: rgba(56, 56, 56, 0.95);
+
+//typography
+$font-heading: "Poppins", sans-serif;
+$font-paragraphs: "Be Vietnam Pro", sans-serif;
+
+//sizing
+$heading-h1: 48px;
+$heading-h2: 38px;
+$heading-h3: 28px;
+$sub-heading-h1: 38px;
+$sub-heading-h2: 28px;
+$sub-heading-h3: 24px;
+$sub-heading-h4: 22px;
+$sub-heading-h5: 12px;
+$button-font-size: 28px;
+$para-p1: 18px;
+$para-p2: 16px;
+$para-p3: 12px;
+$font-weight-fw1: 700;
+$font-weight-fw2: 600;
+$font-weight-fw3: 500;
+$font-weight-fw4: 400;
+
+:export {
+  colorYellow: $color-yellow;
+  colorBlue: $color-blue;
+  colorBrown: $color-brown;
+  colorGreen: $color-green;
+  colorBlack: $color-black;
+  colorPrimary: $color-primary;
+  colorGray: $color-gray;
+}
+
+//
+
+// H1 (Elevating exp) - 38px
+// H1 (About, Services, Our Work, Contact, Ideas) - 74px
+// H2 - 34px
+// H3 - 26px
+// H4 - 22px
+// H5 (blog heading) - 18px
+// Paragraph - 16px
+
+$h1_homepage_title_large: 74px;
+$h1_homePage_title_small: 38px;
+
+$h1_large: 128px;
+$h1_small: 60px;
+
+$h2_large: 40px;
+$h2_small: 32px;
+
+$h3_large: 28px;
+$h3_small: 24px;
+
+$h4_large: 24px;
+$h4_small: 20px;
+
+$h5_large: 22px;
+$h5_medium: 18px;
+$h5_small: 18px;
+
+$p_large: 18px;
+$p_small: 16px;

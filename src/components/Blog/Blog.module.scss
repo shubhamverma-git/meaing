@@ -1,0 +1,55 @@
+@import "../../styles/abstracts/variables";
+
+.blog_list {
+  background-color: #424242;
+  padding: 86px 0 40px 20px;
+  display: flex;
+  .heading {
+    margin: 0;
+    height: fit-content;
+    writing-mode: vertical-lr;
+    color: #424242;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #f2f2f2;
+    transform: rotate(180deg);
+    text-align: center;
+    padding: 0 30px;
+    font-family: $font-heading;
+    font-size: 165px;
+    font-weight: bolder;
+    text-align: end;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .blog_list {
+    display: block;
+    padding: 0;
+    padding-left: 40px;
+    .heading {
+      margin: 0;
+      height: fit-content;
+      writing-mode: unset;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #f2f2f2;
+      transform: rotate(0deg);
+      text-align: left;
+      padding: 0px;
+      font-family: $font-heading;
+      font-size: 140px;
+      font-weight: bolder;
+      padding: 0px;
+      margin-left: -10px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .blog_list {
+    padding: 24px 0px 0px 24px;
+    .heading {
+      font-size: 80px;
+      margin-left: -5px;
+    }
+  }
+}

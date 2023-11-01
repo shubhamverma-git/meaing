@@ -1,0 +1,43 @@
+.container {
+  width: fit-content;
+  position: relative;
+  background-color: transparent;
+
+  button {
+    background-color: black;
+    border: 0;
+    padding: 10px;
+    display: flex;
+    width: calc(100% - 40px);
+    transition: width 0.2s ease-in-out;
+    outline: none;
+
+    h5 {
+      color: white;
+      white-space: nowrap;
+      margin: 0;
+      padding-right: 40px;
+    }
+
+    span {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      .icon_class {
+        color: rgb(0, 0, 0);
+        transform: rotate(0deg);
+        transition: transform 0.2s ease-in-out;
+      }
+    }
+    &:hover {
+      width: 100%;
+      transition: width 0.2s ease-in-out;
+    }
+    &:hover span .icon_class {
+      color: white;
+      transform: rotate(90deg);
+      transition: transform 0.2s ease-in-out;
+    }
+  }
+}

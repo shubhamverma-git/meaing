@@ -1,0 +1,39 @@
+@import "abstracts/variables";
+@import "base/reset";
+@import "base/typography";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  color: $color-black;
+  font-family: $font-paragraphs;
+  font-size: $p_large;
+  margin: 0px;
+  padding: 0px;
+}
+
+.page_spacing {
+  padding: 0px 120px;
+}
+
+@media screen and (max-width: 1440px) {
+  .page_spacing {
+    padding: 0px 80px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .page_spacing {
+    padding: 0px 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .page_spacing {
+    padding: 0px 16px;
+  }
+}

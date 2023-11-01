@@ -1,0 +1,60 @@
+@import "../../styles/abstracts/variables";
+.intro_spacing {
+  // margin-bottom: 30px;
+}
+.card_container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-top: 24px;
+}
+
+.card {
+  padding: 0;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  &:nth-child(2) {
+    border-left: 0px;
+  }
+  &:nth-child(3) {
+    border-left: 0px;
+  }
+  &:nth-child(4) {
+    border-left: 0px;
+  }
+}
+@media (max-width: 1440px) {
+  .card_container {
+    grid-template-columns: 50% 50%;
+  }
+  .card {
+    &:nth-child(1) {
+      border-bottom: 0px;
+    }
+    &:nth-child(2) {
+      border-bottom: 0px;
+    }
+    &:nth-child(3) {
+      border-left: 2px solid black;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .card_container {
+    margin-top: 16px;
+    grid-template-columns: auto;
+  }
+  .card {
+    &:nth-child(1) {
+      border-bottom: 0px;
+    }
+    &:nth-child(2) {
+      border-left: 2px solid black;
+    }
+    &:nth-child(3) {
+      border-bottom: 0px;
+    }
+    &:nth-child(4) {
+      border-left: 2px solid black;
+    }
+  }
+}

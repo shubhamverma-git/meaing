@@ -1,0 +1,17 @@
+.container {
+  animation: jumpInfinite 3s ease-in-out infinite;
+  bottom: 25px;
+  cursor: pointer;
+}
+
+@keyframes jumpInfinite {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}

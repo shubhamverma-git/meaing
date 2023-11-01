@@ -1,0 +1,69 @@
+@import "../../../styles/abstracts/variables";
+
+.customButton {
+  display: inline-block;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0;
+
+  &:hover .buttonBackground {
+    width: 100%;
+  }
+
+  .buttonBackground {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 1;
+    transition: width 0.3s ease;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  .buttonText {
+    display: inline-block;
+    position: relative;
+    padding: 12px 40px;
+    font-size: $button-font-size;
+    font-family: $font-heading;
+    font-weight: 600;
+    text-align: center;
+    z-index: 2;
+    white-space: nowrap;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 50%;
+      z-index: -2;
+    }
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .customButton {
+    .buttonText {
+      padding: 12px 25px;
+      font-size: $h3_small
+    }
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .customButton {
+    .buttonText {
+      padding: 12px 25px;
+      font-size: $h3_small;
+    }
+  }
+}

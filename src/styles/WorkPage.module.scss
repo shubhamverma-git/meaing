@@ -1,0 +1,19 @@
+@import "@/styles/abstracts/variables";
+
+.container {
+  margin-bottom: 80px;
+}
+.card_container {
+  margin: 80px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}

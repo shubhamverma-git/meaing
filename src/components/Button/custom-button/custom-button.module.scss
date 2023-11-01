@@ -1,0 +1,44 @@
+.container {
+  // background-color: rgb(255, 255, 255);
+  width: fit-content;
+  position: relative;
+  background-color: transparent;
+  margin-right: 10px;
+
+  button {
+    background-color: black;
+    width: calc(100% - 25px);
+    border: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    transition: width 0.2s ease-in-out;
+    outline: none;
+
+    h5 {
+      color: white;
+      white-space: nowrap;
+      margin: 0;
+      padding-right: 25px;
+    }
+
+    span {
+      color: inherit;
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      transform: translateY(-50%);
+    }
+  }
+
+  &:hover {
+    button {
+      width: calc(100% + 10px);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  &:hover span {
+    color: white;
+  }
+}

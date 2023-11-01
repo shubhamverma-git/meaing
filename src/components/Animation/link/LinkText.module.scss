@@ -1,0 +1,29 @@
+.container {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: unset;
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 100%;
+    bottom: -5px;
+    background-color: #ffffff;
+    height: 2px;
+    transition-property: left right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  &:hover::after,
+  &:focus::after,
+  &:active::after {
+    right: 0;
+  }
+}

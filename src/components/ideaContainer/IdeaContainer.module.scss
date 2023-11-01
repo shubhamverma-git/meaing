@@ -1,0 +1,44 @@
+@import "@/styles/abstracts/variables";
+
+.container {
+  //   background-color: rgb(214, 203, 184);
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.idea_card_container {
+  //   margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+@media screen and (max-width: 1440px) {
+  .idea_card_container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .idea_card_container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .idea_card_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 762px) {
+  .idea_card_container {
+    grid-template-columns: 100%;
+  }
+}

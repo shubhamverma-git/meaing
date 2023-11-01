@@ -1,0 +1,79 @@
+@import "../../../styles/abstracts/variables";
+
+.container {
+  padding: 16px;
+  padding-bottom: 24px;
+  background-color: #fff;
+  cursor: pointer;
+  height: 100%;
+  position: relative;
+  height: 540px;
+  border: 1px solid black;
+  max-width: 530px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+  height: 276px;
+}
+.pill {
+  margin-bottom: 12px;
+  font-family: $font-heading;
+}
+
+.card_title {
+  color: #000;
+  font-size: $h5_large;
+  font-family: $font-heading;
+  font-weight: $font-weight-fw2;
+  line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.card_content {
+  font-size: $p_large;
+  font-family: $font-paragraphs;
+  font-weight: $font-weight-fw4;
+  line-height: $p_large * 1.5;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 25px;
+  color: #000;
+}
+.arrow_container {
+  .arrow {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    height: 450px;
+  }
+  .card_title {
+    font-size: $p_small;
+    line-height: $p_small * 1.5;
+  }
+
+  .card_content {
+    font-size: $p_small;
+  }
+  .image {
+    height: 200px;
+  }
+}

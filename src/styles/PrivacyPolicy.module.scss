@@ -1,0 +1,54 @@
+@import "@/styles/abstracts/variables";
+
+.policy_container {
+  padding: 72px 200px;
+
+  .heading {
+    font-size: $h2_large;
+    font-weight: 700;
+    font-family: $font-heading;
+    // line-height: 60px;
+    margin-top: 40px;
+  }
+  p,
+  li {
+    font-size: $p_large;
+    font-family: $font-paragraphs;
+    font-weight: 400;
+  }
+  .desc {
+    margin-top: 10px !important;
+    // line-height: 30px;
+    // background-color: rebeccapurple;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .policy_container {
+    padding: 40px 16px;
+    .heading {
+      font-size: $h5_large;
+      font-weight: 600;
+      font-family: $font-heading;
+      margin: 15px 0px 5px 0px;
+    }
+    p,
+    li {
+      font-size: $p_small;
+      font-family: $font-paragraphs;
+      font-weight: 400;
+    }
+    .desc {
+      margin-top: 5px !important;
+    }
+    ul {
+      padding-left: 1rem;
+    }
+  }
+}
+
+@media (min-width: 577px) and (max-width: 1200px) {
+  .policy_container {
+    padding: 40px;
+  }
+}

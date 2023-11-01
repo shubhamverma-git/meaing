@@ -1,0 +1,72 @@
+@import "../../styles/abstracts/variables";
+
+.joinus_container {
+  background-color: $color-dark-grey;
+  padding: 48px;
+  color: $color-primary;
+}
+
+.button {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-family: $font-heading;
+  font-size: $h2_large;
+  font-weight: $font-weight-fw1;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.content {
+  font-family: $font-paragraphs;
+  font-size: $p_large;
+  font-weight: $font-weight-fw4;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin: 12px 0 0 0;
+}
+
+@media (min-width: 577px) and (max-width: 1200px) {
+  .joinus_container {
+    padding: 30px;
+  }
+  .heading {
+    font-size: $h4_large;
+    font-weight: $font-weight-fw1;
+    line-height: 42px;
+  }
+
+  .content {
+    font-weight: $font-weight-fw4;
+  }
+  .button {
+    margin-top: 22px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .joinus_container {
+    padding: 30px 16px;
+  }
+
+  .heading {
+    font-size: $h2_small;
+    font-weight: $font-weight-fw1;
+    line-height: 42px;
+  }
+
+  .content {
+    font-weight: $font-weight-fw4;
+    line-height: 22px;
+    margin-top: 12px;
+  }
+  .button {
+    margin-top: 22px;
+  }
+}

@@ -1,0 +1,92 @@
+@import "./abstracts/variables";
+
+.btn_style {
+  color: $color-black;
+  font-size: $h3_large;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: $font-paragraphs;
+  font-weight: $font-weight-fw2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 56px;
+}
+
+.btn_background_box {
+  position: relative;
+  width: 100px;
+  height: 70px;
+}
+
+.service_section_cards_container {
+  display: flex;
+  gap: 32px;
+  position: relative;
+}
+
+.service_section_cards_title {
+  font-family: $font-heading;
+  font-size: $h5_large;
+  font-weight: $font-weight-fw1;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+}
+
+.service_section_cards_content {
+  font-family: $font-paragraphs;
+  font-size: $p_large;
+  font-weight: $font-weight-fw4;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 16px 0 0 0;
+}
+
+.swiper-container {
+  margin: 0 !important;
+  width: auto !important;
+}
+.swiper-slide {
+  width: 300px !important;
+}
+
+@media screen and (max-width: 567px) {
+  .btn_background_box {
+    width: 70px;
+    height: 46px;
+  }
+  .card_title {
+    font-family: $font-heading;
+    font-size: $p_small;
+    font-weight: $font-weight-fw2;
+  }
+
+  .card_content {
+    font-family: $font-paragraphs;
+    font-size: $p_small;
+    font-weight: $font-weight-fw4;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 10px 0 0 0;
+  }
+
+  .btn_style {
+    font-size: $h3_large;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-family: $font-paragraphs;
+    font-weight: $font-weight-fw3;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 45px;
+  }
+}

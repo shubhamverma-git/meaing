@@ -1,0 +1,75 @@
+@import "@/styles//abstracts/variables";
+
+.trending_service_section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 30px;
+
+  .trending_section_heading {
+    position: relative;
+    text-align: left;
+
+    h3 {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: min-content;
+      color: #ecebeb;
+      font-family: $font-heading;
+      font-size: min(400px, 17vw);
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0;
+      position: absolute;
+      color: #000;
+      width: 100%;
+      font-family: $font-heading;
+      font-size: min(60px, 5vw);
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-transform: capitalize;
+    }
+  }
+
+  .trendingCards_container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    margin-top: -70px;
+  }
+
+  .explore_more_button {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .trending_service_section {
+    .trendingCards_container {
+      grid-template-columns: auto auto;
+      gap: 30px;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .trending_service_section {
+    .trendingCards_container {
+      grid-template-columns: auto;
+      gap: 30px;
+      justify-content: center;
+    }
+  }
+}

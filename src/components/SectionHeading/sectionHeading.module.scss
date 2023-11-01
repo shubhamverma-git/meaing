@@ -1,0 +1,67 @@
+@import "@/styles/abstracts/variables";
+
+.container {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
+  // gap: 5px;
+}
+
+.container {
+  h1 {
+    color: #000;
+    font-family: $font-heading;
+    font-size: $h2_large;
+    margin: 0px;
+    line-height: $h2_large * 1.25;
+    font-weight: $font-weight-fw1;
+    span {
+      color: #737373;
+    }
+  }
+  h3 {
+    color: #737373;
+    font-family: $font-heading;
+    font-size: $h3_large;
+    line-height: $h3_large * 1.25;
+    font-style: italic;
+    font-weight: $font-weight-fw1;
+  }
+  .description {
+    font-size: $p_large;
+    line-height: 1.5;
+    font-family: $font-paragraphs;
+    font-weight: $font-weight-fw4;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    text-align: left !important;
+    margin-top: 40px;
+    h1 {
+      font-size: $h2_small;
+      line-height: 1.25;
+      font-weight: $font-weight-fw1;
+      align-self: flex-start;
+      font-size: $h3_small;
+      font-weight: bold;
+    }
+    h3 {
+      align-self: flex-start;
+      font-size: $h3_small;
+      line-height: 1.25;
+      font-weight: $font-weight-fw3;
+    }
+    .description {
+      margin-top: 10px;
+      font-size: $p_small;
+      line-height: 1.5;
+      font-weight: $font-weight-fw4;
+    }
+  }
+}

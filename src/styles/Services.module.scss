@@ -1,0 +1,418 @@
+@import "@/styles//abstracts/variables";
+
+.service_section_container {
+  overflow: hidden;
+
+  .subService_desktop_view {
+    margin-top: 50px;
+    .hero_container {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      gap: 30px;
+
+      .horizontal_bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 20%;
+        height: 2px;
+        animation: leftToRight 2s ease-in-out forwards;
+        transform-origin: left;
+      }
+
+      .service_section_intro {
+        width: 45%;
+        display: flex;
+        align-items: center;
+
+        .details_section {
+          .subService_intro_heading {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            height: fit-content;
+            height: 70px;
+            margin-top: 20px;
+
+            .animated_icon_container {
+              display: flex;
+              justify-content: center;
+
+              .service_icon_animated {
+                width: 72px;
+              }
+            }
+
+            .title_container {
+              .title {
+                margin: 0;
+                font-family: $font-heading;
+                font-size: min(56px, 5vw) !important;
+                font-weight: $font-weight-fw2;
+                text-align: left;
+              }
+            }
+          }
+
+          .subService_intro_content {
+            .intro {
+              font-size: $p_large;
+              font-family: $font-paragraphs;
+              font-weight: $font-weight-fw4;
+              margin-top: 20px;
+              margin-bottom: 30px;
+              color: #000;
+            }
+
+            .description {
+              font-size: $p_large;
+              font-family: $font-paragraphs;
+              font-weight: $font-weight-fw4;
+              margin-top: 20px;
+              margin-bottom: 40px;
+            }
+          }
+        }
+      }
+
+      .image_container {
+        width: 55%;
+        overflow: hidden !important;
+
+        .hero_image {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+
+        .mobile_subService_intro_heading {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .service_softwares_container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .trending_service_section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+
+    .trending_section_heading {
+      position: relative;
+      text-align: left;
+
+      h3 {
+        margin: 0;
+        padding: 0;
+        color: #ecebeb;
+        font-family: $font-heading;
+        font-size: min(300px, 16vw);
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        margin: 0;
+        position: absolute;
+        color: #000;
+        width: 100%;
+        font-family: $font-heading;
+        font-size: min(60px, 5vw);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-transform: capitalize;
+      }
+    }
+
+    .trendingCards_container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 30px;
+      margin-top: -70px;
+    }
+
+    .explore_more_button {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.blog_wrapper {
+  margin-top: 80px;
+  margin-bottom: 54px;
+}
+
+.service_section_intro {
+  animation: fromLeft 2s ease-in-out forwards;
+}
+
+@keyframes leftToRight {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes fromLeft {
+  0% {
+    transform: translate(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .service_section_container {
+    .subService_desktop_view {
+      .hero_container {
+        gap: 20px;
+
+        .service_section_intro {
+          width: 45%;
+          align-items: center;
+
+          .details_section {
+            .subService_intro_heading {
+              .animated_icon_container {
+                .service_icon_animated {
+                  width: 56px;
+                }
+              }
+
+              .title_container {
+                .title {
+                  font-size: $h2_large;
+                }
+              }
+            }
+
+            .subService_intro_content {
+              .intro {
+                margin-top: 10px;
+                margin-bottom: 20px;
+              }
+
+              .description {
+                font-size: $p_large;
+                margin-top: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .trending_service_section {
+      .trendingCards_container {
+        grid-template-columns: auto auto;
+        gap: 30px;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .service_section_container {
+    .subService_desktop_view {
+      .hero_container {
+        gap: 20px;
+        flex-direction: column-reverse;
+
+        .service_section_intro {
+          width: 100%;
+          align-items: center;
+
+          .details_section {
+            .subService_intro_heading {
+              background-color: gray;
+              display: none;
+
+              .animated_icon_container {
+                .service_icon_animated {
+                  width: 60px;
+                }
+              }
+
+              .title_container {
+                .title {
+                  font-size: $h2_large;
+                }
+              }
+            }
+
+            .subService_intro_content {
+              .intro {
+                margin-top: 10px;
+                margin-bottom: 20px;
+              }
+
+              .description {
+                font-size: $p_large;
+                margin-top: 20px;
+              }
+            }
+          }
+        }
+
+        .image_container {
+          width: 100%;
+          overflow: hidden !important;
+
+          .hero_image {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+          }
+
+          .mobile_subService_intro_heading {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            height: min(100px, 16vw);
+
+            .animated_icon_container {
+              margin-bottom: 10px;
+
+              .service_icon_animated {
+                margin: 0;
+                height: min(72px, 10vw);
+                width: min(72px, 15vw);
+              }
+            }
+
+            .title {
+              font-size: min(72px, 10vw);
+              font-weight: 700;
+            }
+          }
+        }
+
+        .horizontal_bar {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service_section_container {
+    service_softwares_container {
+      margin: 0px;
+    }
+
+    .trending_service_section {
+      .trendingCards_container {
+        grid-template-columns: auto;
+        gap: 30px;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .blog_wrapper {
+    margin-top: 40px;
+    // margin-bottom: 54px;
+  }
+}
+
+// ------ btn
+
+.data_and_ai_btn_quire_form {
+  button {
+    background-color: #7e5bae !important;
+
+    h5 {
+      color: #f4f4f4 !important;
+    }
+
+    span {
+      color: #7e5bae !important;
+    }
+  }
+
+  &:hover span {
+    color: #f4f4f4 !important;
+  }
+}
+
+.development_btn_quire_form {
+  button {
+    background-color: #0088c4 !important;
+
+    h5 {
+      color: #f4f4f4 !important;
+    }
+
+    span {
+      color: #0088c4 !important;
+    }
+  }
+
+  &:hover span {
+    color: #f4f4f4 !important;
+  }
+}
+
+.design_btn_quire_form {
+  button {
+    background-color: #d7ce00 !important;
+
+    h5 {
+      color: #1c1c1c !important;
+    }
+
+    span {
+      color: #1c1c1c !important;
+    }
+  }
+
+  &:hover span {
+    color: #1c1c1c !important;
+  }
+}
+
+.strategies_btn_quire_form {
+  button {
+    background-color: #207b25 !important;
+
+    h5 {
+      color: #f4f4f4 !important;
+    }
+
+    span {
+      color: #207b25 !important;
+    }
+  }
+
+  &:hover span {
+    color: #f4f4f4 !important;
+  }
+}

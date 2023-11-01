@@ -1,0 +1,79 @@
+@import "@/styles/abstracts/variables";
+
+.hero {
+  margin-top: 70px;
+  background-color: #383838f2;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.hero_text {
+  color: white;
+  font-size: $h1_large;
+  font-weight: $font-weight-fw1;
+  text-shadow: 0px 0px 2px #80f60a;
+}
+
+.welcome_container_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+
+  .welcome_container {
+    width: 80%;
+
+    h2 {
+      text-align: center;
+      color: #000;
+      text-align: center;
+      font-size: min(40px, 10vw);
+      font-style: normal;
+      font-weight: $font-weight-fw1;
+      line-height: normal;
+    }
+
+    h6 {
+      color: #000;
+      text-align: center;
+      font-family: Inter;
+      font-size: min(18px, 5vw);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+    }
+  }
+}
+
+.culture {
+  margin-top: 120px;
+  padding: 0px !important;
+
+  div {
+    padding: 0px !important;
+  }
+}
+
+.intro_section_container {
+  // margin-top: 80  px;
+}
+
+@media screen and (max-width: 992px) {
+  .welcome_container_wrapper {
+    margin-top: 60px;
+  }
+
+  .intro_section_container {
+    // margin-top: 60px;
+    // background-color: rebeccapurple;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .welcome_container_wrapper {
+    margin-top: 54px;
+  }
+}
